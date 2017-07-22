@@ -11,10 +11,10 @@ import java.util.Map;
 public class CustomLoader implements CacheLoader<String, String>, Serializable{
 
 	public String load(String s) throws CacheLoaderException {
-		return "as";
+		return s;
 	}
 
 	public Map<String, String> loadAll(Iterable<? extends String> iterable) throws CacheLoaderException {
-		throw new UnsupportedOperationException("asdasdasdasd");
+		throw new UnsupportedOperationException();
 	}
 }
